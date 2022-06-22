@@ -37,7 +37,20 @@
       {
         "namedComponents": "arrow-function"
       }
-    ]
+    ],
+    "react/jsx-max-props-per-line": [
+      "error",
+      {
+        "maximum": 1
+      }
+    ],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "ignoreCase": false
+      }
+    ],
+    "react/jsx-boolean-value": "error"
   },
   "parserOptions": {
     "project": "./tsconfig.json"

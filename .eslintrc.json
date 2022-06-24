@@ -7,7 +7,17 @@
     "plugin:react/jsx-runtime"
   ],
   "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ],
+    "react/prop-types": "off",
     "semi": ["error", "never"],
+    "sort-imports": "error",
+    "import/newline-after-import": ["error", { "count": 2 }],
     "@typescript-eslint/semi": ["error", "never"],
     "@typescript-eslint/naming-convention": [
       "error",

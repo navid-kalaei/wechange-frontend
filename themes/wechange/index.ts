@@ -4,11 +4,13 @@ import { extendTheme } from '@chakra-ui/react'
 // eslint-disable-next-line sort-imports
 import components from './components'
 import config from './config'
+import defaultTheme from '../default'
 import foundations from './foundations'
 import styles from './styles'
 
 
 const overrides: Partial<ChakraTheme> = {
+  ...defaultTheme,
   config,
   styles,
   ...(foundations as Dict),

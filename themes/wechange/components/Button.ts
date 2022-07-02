@@ -4,7 +4,7 @@ import type { ComponentStyleConfig } from '@chakra-ui/theme'
 
 const Button: ComponentStyleConfig = {
   variants: {
-    formAddon: (_props: StyleFunctionProps) => ({
+    inputRightElement: {
       bg: 'gray.100',
       borderRadius: 'base',
       color: 'gray.800',
@@ -12,7 +12,7 @@ const Button: ComponentStyleConfig = {
       fontWeight: 'normal',
       h: 6,
       w: 'full',
-    }),
+    },
     solid: (props: StyleFunctionProps) => ({
       bg: mode('teal.600', 'teal.300')(props),
       color: mode('white', 'gray.900')(props),

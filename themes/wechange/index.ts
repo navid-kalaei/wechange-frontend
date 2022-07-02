@@ -10,14 +10,13 @@ import styles from './styles'
 
 
 const overrides: Partial<ChakraTheme> = {
-  ...defaultTheme,
   config,
   styles,
   ...(foundations as Dict),
   components,
 }
 
-const theme = extendTheme(overrides)
+const theme = extendTheme(defaultTheme, overrides)
 
 
 export default theme

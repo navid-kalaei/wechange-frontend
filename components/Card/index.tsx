@@ -1,5 +1,5 @@
+import { Box, useStyleConfig } from '@chakra-ui/react'
 import { FC, ReactNode } from 'react'
-import { Box } from '@chakra-ui/react'
 
 
 interface CardProps {
@@ -10,11 +10,13 @@ interface CardProps {
 const Card: FC<CardProps> = (props) => {
   const { children } = props
 
+  const styles = useStyleConfig('Card', props)
+
   return (
     <Box
-      border="1px"
+      __css={styles}
+      border="2px"
       borderRadius="base"
-      boxShadow="xs"
       mb={6}
       p={6}
       w="full"

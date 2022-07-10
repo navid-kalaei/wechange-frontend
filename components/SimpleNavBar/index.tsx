@@ -1,6 +1,7 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import { FC } from 'react'
 import Image from 'next/image'
+import ToggleColorModeButton from '../ToggleColorModeButton'
 
 
 const SimpleNavBar: FC = () => (
@@ -9,23 +10,30 @@ const SimpleNavBar: FC = () => (
     as="nav"
     gap={2}
     h={58}
+    justifyContent="space-between"
     mb={4}
     p={4}
   >
-    <Image
-      alt="logo"
-      height={28}
-      layout="fixed"
-      src="/projects/default/img/logo.png"
-      width={28}
-    />
-
-    <Text
-      fontWeight="semibold"
+    <Flex
+      alignItems="center"
+      gap={2}
     >
-      WECHANGE
-    </Text>
+      <Image
+        alt="logo"
+        height={28}
+        layout="fixed"
+        src="/projects/default/img/logo.png"
+        width={28}
+      />
 
+      <Text
+        fontWeight="semibold"
+      >
+        WECHANGE
+      </Text>
+    </Flex>
+
+    <ToggleColorModeButton />
   </Flex>
 )
 

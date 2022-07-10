@@ -1,21 +1,27 @@
-import { Button, useColorMode } from '@chakra-ui/react'
+import { Button, Flex, useColorMode } from '@chakra-ui/react'
 import { FC } from 'react'
+import ToggleColorModeIcon from '../ToggleColorModeIcon'
+import ToggleColorModeText from '../ToggleColorModeText'
 
 
 const ToggleColorModeButton: FC = () => {
   const { toggleColorMode } = useColorMode()
 
   return (
-    <Button
-      bottom={4}
-      onClick={toggleColorMode}
-      position="fixed"
-      right={4}
-      size="sm"
-      variant="solid"
+    <Flex
+      alignItems="center"
+      gap={2}
+      justifyContent="end"
     >
-      Toggle Color Mode
-    </Button>
+      <ToggleColorModeText />
+
+      <Button
+        onClick={toggleColorMode}
+        size="sm"
+      >
+        <ToggleColorModeIcon />
+      </Button>
+    </Flex>
   )
 }
 

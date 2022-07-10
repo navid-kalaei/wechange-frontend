@@ -1,6 +1,5 @@
 import type {
   NextComponentType,
-  NextLayoutComponentType,
   NextPageContext,
 } from 'next'
 import type { AppProps } from 'next/app'

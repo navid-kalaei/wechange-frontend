@@ -13,14 +13,7 @@ const Card: FC<CardProps> = (props) => {
   const styles = useStyleConfig('Card', props)
 
   return (
-    <Box
-      __css={styles}
-      border="2px"
-      borderRadius="base"
-      mb={6}
-      p={6}
-      w="full"
-    >
+    <Box __css={styles}>
       {children}
     </Box>
   )

@@ -9,10 +9,12 @@ import {
 } from '@chakra-ui/react'
 import { FC } from 'react'
 import NextLink from 'next/link'
+// eslint-disable-next-line sort-imports
+import FormHelperText from '../../FormHelperText'
 import PasswordInput from '../../PasswordInput'
 
 
-const CredentialsForm: FC = () => (
+const SignUpForm: FC = () => (
   <VStack
     align="stretch"
     gap={6}
@@ -25,9 +27,10 @@ const CredentialsForm: FC = () => (
     <FormControl isRequired>
       <FormLabel htmlFor="password">Password</FormLabel>
       <PasswordInput />
+      <FormHelperText variant="success">Password is strong</FormHelperText>
     </FormControl>
 
-    <Button>Continue</Button>
+    <Button variant="brand-solid">Continue</Button>
 
     <Box>
       <Text mb={4}>
@@ -36,11 +39,11 @@ const CredentialsForm: FC = () => (
       </Text>
 
       <NextLink href="#">
-        <Button variant="link">Learn more</Button>
+        <Button variant="brand-link">Learn more</Button>
       </NextLink>
     </Box>
   </VStack>
 )
 
 
-export default CredentialsForm
+export default SignUpForm

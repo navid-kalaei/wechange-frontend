@@ -19,7 +19,7 @@ const PasswordInput: FC = () => {
       >
         <Button
           onClick={handleClick}
-          variant="formAddon"
+          variant="inputRightElement"
         >
           {show ? 'Hide' : 'Show'}
         </Button>

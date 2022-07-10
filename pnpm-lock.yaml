@@ -10,6 +10,7 @@ specifiers:
   '@chakra-ui/utils': ^2.0.2
   '@emotion/react': ^11.9.3
   '@emotion/styled': ^11.9.3
+  '@react-icons/all-files': ^4.1.0
   '@types/node': 18.0.0
   '@types/prop-types': ^15.7.5
   '@types/react': 18.0.14
@@ -39,6 +40,7 @@ dependencies:
   '@chakra-ui/utils': 2.0.2
   '@emotion/react': 11.9.3_4jaruczdv2uxjj3lb2xbkiuci4
   '@emotion/styled': 11.9.3_toiz7tndcw4z2b7gxmmeo5fkcu
+  '@react-icons/all-files': 4.1.0_react@18.2.0
   framer-motion: 6.4.3_biqbaboplfbrettd7655fr4n2y
   next: 12.1.6_beenoklgwfttvph5dgxj7na7aq
   prop-types: 15.8.1
@@ -1412,6 +1414,14 @@ packages:
 
   /@popperjs/core/2.11.5:
     resolution: {integrity: sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==}
+    dev: false
+
+  /@react-icons/all-files/4.1.0_react@18.2.0:
+    resolution: {integrity: sha512-hxBI2UOuVaI3O/BhQfhtb4kcGn9ft12RWAFVMUeNjqqhLsHvFtzIkFaptBJpFDANTKoDfdVoHTKZDlwKCACbMQ==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@rushstack/eslint-patch/1.1.4:

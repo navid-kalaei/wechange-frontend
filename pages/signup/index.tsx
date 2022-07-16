@@ -1,5 +1,5 @@
 import {
-  Button,
+  Link,
   Text,
   VStack,
 } from '@chakra-ui/react'
@@ -38,7 +38,8 @@ const Signup: NextPage = () => (
           href="#"
           passHref
         >
-          <Button variant="brand-link">Log in</Button>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <Link>Log in</Link>
         </NextLink>
       </VStack>
 

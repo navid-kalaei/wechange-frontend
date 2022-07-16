@@ -45,10 +45,6 @@ const Button: ComponentStyleConfig = {
         bg: 'gray.400',
       },
     }),
-    'brand-link': (props: StyleFunctionProps) => ({
-      color: mode('teal.600', 'teal.300')(props),
-      textDecoration: 'underline',
-    }),
     'brand-loading': (props: StyleFunctionProps) => ({
       color: mode('white', 'gray.900')(props),
       bg: mode('teal.500', 'teal.200')(props),

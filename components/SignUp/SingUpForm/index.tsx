@@ -4,6 +4,7 @@ import {
   FormControl,
   FormLabel,
   Input,
+  Link,
   Text,
   VStack,
 } from '@chakra-ui/react'
@@ -38,8 +39,12 @@ const SignUpForm: FC = () => (
         The use of wechange.de is free of charge. However, we ask you to support the maintenance and further development of the platform with a voluntary contribution after completing registration.
       </Text>
 
-      <NextLink href="#">
-        <Button variant="brand-link">Learn more</Button>
+      <NextLink
+        href="#"
+        passHref
+      >
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <Link>Learn more</Link>
       </NextLink>
     </Box>
   </VStack>

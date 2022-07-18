@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/anatomy": "^2.0.1",
     "@chakra-ui/input": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
     "@chakra-ui/theme": "^2.1.0",

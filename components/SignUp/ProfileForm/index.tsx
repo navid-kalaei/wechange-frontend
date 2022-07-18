@@ -6,20 +6,17 @@ import {
   FormLabel,
   Link,
   Text,
-  VStack,
 } from '@chakra-ui/react'
 import { FC } from 'react'
 import NextLink from 'next/link'
 // eslint-disable-next-line sort-imports
 import FormHelperText from '../../FormHelperText'
+import FormVStack from '../../../layouts/FormVStack'
 import Input from '../../Input'
 
 
 const ProfileForm: FC = () => (
-  <VStack
-    align="stretch"
-    gap={6}
-  >
+  <FormVStack>
     <FormControl isRequired>
       <FormLabel htmlFor="display_name">Display name</FormLabel>
       <Input id="display_name" />
@@ -52,7 +49,7 @@ const ProfileForm: FC = () => (
       .
 
     </Box>
-  </VStack>
+  </FormVStack>
 )
 
 

@@ -6,20 +6,17 @@ import {
   Input,
   Link,
   Text,
-  VStack,
 } from '@chakra-ui/react'
 import { FC } from 'react'
 import NextLink from 'next/link'
 // eslint-disable-next-line sort-imports
 import FormHelperText from '../../FormHelperText'
+import FormVStack from '../../../layouts/FormVStack'
 import PasswordInput from '../../PasswordInput'
 
 
 const SignUpForm: FC = () => (
-  <VStack
-    align="stretch"
-    gap={6}
-  >
+  <FormVStack>
     <FormControl isRequired>
       <FormLabel htmlFor="email">Email</FormLabel>
       <Input id="email" />
@@ -47,7 +44,7 @@ const SignUpForm: FC = () => (
         <Link>Learn more</Link>
       </NextLink>
     </Box>
-  </VStack>
+  </FormVStack>
 )
 
 

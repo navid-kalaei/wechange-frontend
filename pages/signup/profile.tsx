@@ -1,4 +1,9 @@
 import {
+  Alert,
+  AlertDescription,
+  AlertIcon,
+  AlertTitle,
+  Box,
   Link,
   Text,
   VStack,
@@ -7,6 +12,7 @@ import NextLink from 'next/link'
 import type { NextPage } from 'next'
 // eslint-disable-next-line sort-imports
 import Card from '../../components/Card'
+import Closable from '../../containers/Closable'
 import FullHeightCenterWithNavBar from '../../layouts/FullHeightCenterWithNavBar'
 import ProfileForm from '../../components/SignUp/ProfileForm'
 
@@ -27,6 +33,21 @@ const Signup: NextPage = () => (
       >
         Sign Up
       </Text>
+
+      <Closable>
+        <Alert
+          status="error"
+          variant="solid"
+        >
+          <AlertIcon />
+          <Box>
+            <AlertTitle>Log In not possible</AlertTitle>
+            <AlertDescription>
+              The e-mail/password you entered is not correct, please try again.
+            </AlertDescription>
+          </Box>
+        </Alert>
+      </Closable>
 
       <Card>
         <ProfileForm />

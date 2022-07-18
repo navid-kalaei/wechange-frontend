@@ -1,9 +1,9 @@
 import {
   Box,
-  Button, Checkbox,
+  Button,
+  Checkbox,
   FormControl,
   FormLabel,
-  Input,
   Link,
   Text,
   VStack,
@@ -12,6 +12,7 @@ import { FC } from 'react'
 import NextLink from 'next/link'
 // eslint-disable-next-line sort-imports
 import FormHelperText from '../../FormHelperText'
+import Input from '../../Input'
 
 
 const ProfileForm: FC = () => (

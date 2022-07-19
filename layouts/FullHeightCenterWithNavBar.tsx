@@ -1,26 +1,32 @@
 import { FC, ReactNode } from 'react'
-import { Box } from '@chakra-ui/react'
-import FullHeightCenter from './FullHeightCenter'
-import Index from '../components/SimpleNavBar'
+import { Flex, FlexProps } from '@chakra-ui/react'
+import GrowableCenter from './GrowableCenter'
+import SimpleNavBar from '../components/SimpleNavBar'
 
 
-interface FullHeightCenterWithNavBarProps {
+interface FullHeightCenterWithNavBarProps extends FlexProps {
   children?: ReactNode
 }
 
 
 const FullHeightCenterWithNavBar: FC<FullHeightCenterWithNavBarProps> = (props) => {
-  const { children } = props
+  const { children, ...flexProps } = props
 
   return (
-    <Box
-      h="100vh"
-    >
-      <Index />
-      <FullHeightCenter>
-        {children}
-      </FullHeightCenter>
-    </Box>
+    <>
+      {/* eslint-disable react/jsx-props-no-spreading */}
+      <Flex
+        {...flexProps}
+        flexDirection="column"
+        h="100vh"
+      >
+        <SimpleNavBar />
+        <GrowableCenter>
+          {children}
+        </GrowableCenter>
+      </Flex>
+      {/* eslint-enable react/jsx-props-no-spreading */}
+    </>
   )
 }
 

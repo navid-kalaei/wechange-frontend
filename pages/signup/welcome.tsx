@@ -1,22 +1,27 @@
-import {
-  Text,
-  VStack,
-} from '@chakra-ui/react'
 import type { NextPage } from 'next'
 // eslint-disable-next-line sort-imports
+import {
+  Container,
+  Image,
+  Show,
+  Text,
+} from '@chakra-ui/react'
 import Card from '../../components/Card'
 import FullHeightCenterWithNavBar from '../../layouts/FullHeightCenterWithNavBar'
+import VStack from '../../layouts/VStack'
 import Welcome from '../../components/SignUp/Welcome'
 
 
-const Signup: NextPage = () => (
-  <FullHeightCenterWithNavBar>
+const WelcomePage: NextPage = () => (
+  <FullHeightCenterWithNavBar
+    position="relative"
+  >
     <VStack
-      spacing={6}
       w={{
         base: 'full',
         sm: 'sm',
       }}
+      zIndex={2}
     >
       <Text
         display="block"
@@ -29,10 +34,24 @@ const Signup: NextPage = () => (
       <Card>
         <Welcome />
       </Card>
-
     </VStack>
+
+    <Show above="sm">
+      <Container
+        bottom={0}
+        maxH="container.sm"
+        maxW="container.md"
+        position="absolute"
+      >
+        <Image
+          alt=""
+          fit="scale-down"
+          src="/projects/wechange/img/signup/welcome/img.png"
+        />
+      </Container>
+    </Show>
   </FullHeightCenterWithNavBar>
 )
 
 
-export default Signup
+export default WelcomePage

@@ -1,4 +1,5 @@
 import {
+  Box,
   Link,
   Text,
 } from '@chakra-ui/react'
@@ -31,7 +32,7 @@ const Signup: NextPage = () => (
         <SingUpForm />
       </Card>
 
-      <VStack>
+      <Box textAlign="center">
         <Text>Already have an account?</Text>
         <NextLink
           href="#"
@@ -40,7 +41,7 @@ const Signup: NextPage = () => (
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <Link>Log in</Link>
         </NextLink>
-      </VStack>
+      </Box>
 
     </VStack>
   </FullHeightCenterWithNavBar>

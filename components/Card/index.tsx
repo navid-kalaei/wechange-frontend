@@ -1,21 +1,28 @@
-import { Box, useStyleConfig } from '@chakra-ui/react'
+import { Box, BoxProps, useStyleConfig } from '@chakra-ui/react'
 import { FC, ReactNode } from 'react'
 
 
-interface CardProps {
+interface CardProps extends BoxProps {
   children?: ReactNode
 }
 
 
 const Card: FC<CardProps> = (props) => {
-  const { children } = props
+  const { children, ...boxProps } = props
 
   const styles = useStyleConfig('Card', props)
 
   return (
-    <Box __css={styles}>
-      {children}
-    </Box>
+    <>
+      {/* eslint-disable react/jsx-props-no-spreading */}
+      <Box
+        __css={styles}
+        {...boxProps}
+      >
+        {children}
+      </Box>
+      {/* eslint-enable react/jsx-props-no-spreading */}
+    </>
   )
 }
 

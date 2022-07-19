@@ -1,7 +1,6 @@
 import {
   Link,
   Text,
-  VStack,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import type { NextPage } from 'next'
@@ -9,12 +8,12 @@ import type { NextPage } from 'next'
 import Card from '../../components/Card'
 import FullHeightCenterWithNavBar from '../../layouts/FullHeightCenterWithNavBar'
 import SingUpForm from '../../components/SignUp/SingUpForm'
+import VStack from '../../layouts/VStack'
 
 
 const Signup: NextPage = () => (
   <FullHeightCenterWithNavBar>
     <VStack
-      spacing={6}
       w={{
         base: 'full',
         sm: 'sm',

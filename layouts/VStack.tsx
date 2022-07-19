@@ -2,20 +2,20 @@ import { StackProps as ChakraStackProps, VStack as ChakraVStack } from '@chakra-
 import { FC } from 'react'
 
 
-const VStackSpace = {
+const VStackSize = {
   sm: 4,
   md: 6,
 }
 
 interface VStackProps extends ChakraStackProps {
-  size?: keyof typeof VStackSpace
+  size?: keyof typeof VStackSize
 }
 
 
 const VStack: FC<VStackProps> = (props) => {
-  const { children, spacing: spacingName, ...rest } = props
+  const { children, size: sizeName, ...rest } = props
 
-  const size = VStackSpace[spacingName as keyof typeof VStackSpace]
+  const size = VStackSize[sizeName as keyof typeof VStackSize]
 
   return (
     <>

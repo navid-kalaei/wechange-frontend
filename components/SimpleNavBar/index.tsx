@@ -1,7 +1,7 @@
 import { Flex, Text } from '@chakra-ui/react'
 import { FC } from 'react'
 import Image from 'next/image'
-import ToggleColorModeButton from '../ToggleColorModeButton'
+import { ToggleColorModeButton } from '../ToggleColorMode'
 
 
 const SimpleNavBar: FC = () => (

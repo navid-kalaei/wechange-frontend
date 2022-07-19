@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 import { FC } from 'react'
 import Image from 'next/image'
 import ToggleColorModeButton from '../ToggleColorModeButton'
@@ -13,6 +13,7 @@ const SimpleNavBar: FC = () => (
     justifyContent="space-between"
     mb={4}
     p={4}
+    w="full"
   >
     <Flex
       alignItems="center"

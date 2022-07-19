@@ -10,8 +10,7 @@ import {
 import { FC } from 'react'
 import NextLink from 'next/link'
 // eslint-disable-next-line sort-imports
-import FormHelperText from '../../FormHelperText'
-import PasswordInput from '../../PasswordInput'
+import { FormHelperText, PasswordInput } from '../../Form'
 import VStack from '../../../layouts/VStack'
 
 

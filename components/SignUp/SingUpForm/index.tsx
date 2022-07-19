@@ -11,12 +11,15 @@ import { FC } from 'react'
 import NextLink from 'next/link'
 // eslint-disable-next-line sort-imports
 import FormHelperText from '../../FormHelperText'
-import FormVStack from '../../../layouts/FormVStack'
 import PasswordInput from '../../PasswordInput'
+import VStack from '../../../layouts/VStack'
 
 
 const SignUpForm: FC = () => (
-  <FormVStack>
+  <VStack
+    align="stretch"
+    size="sm"
+  >
     <FormControl isRequired>
       <FormLabel htmlFor="email">Email</FormLabel>
       <Input id="email" />
@@ -44,7 +47,7 @@ const SignUpForm: FC = () => (
         <Link>Learn more</Link>
       </NextLink>
     </Box>
-  </FormVStack>
+  </VStack>
 )
 
 

@@ -1,5 +1,3 @@
-import type { NextPage } from 'next'
-// eslint-disable-next-line sort-imports
 import {
   Container,
   Image,
@@ -8,14 +6,13 @@ import {
 } from '@chakra-ui/react'
 import Card from '../../components/Card'
 import FullHeightCenterWithNavBar from '../../layouts/FullHeightCenterWithNavBar'
+import { NextPageWithLayout } from '../_app'
 import VStack from '../../layouts/VStack'
 import Welcome from '../../components/SignUp/Welcome'
 
 
-const WelcomePage: NextPage = () => (
-  <FullHeightCenterWithNavBar
-    position="relative"
-  >
+const WelcomePage: NextPageWithLayout = () => (
+  <>
     <VStack
       w={{
         base: 'full',
@@ -50,6 +47,15 @@ const WelcomePage: NextPage = () => (
         />
       </Container>
     </Show>
+  </>
+)
+
+
+WelcomePage.getLayout = (page) => (
+  <FullHeightCenterWithNavBar
+    position="relative"
+  >
+    {page}
   </FullHeightCenterWithNavBar>
 )
 

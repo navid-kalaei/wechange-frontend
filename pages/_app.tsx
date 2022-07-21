@@ -1,16 +1,19 @@
-import {
-  AppContext,
-  AppInitialProps,
-  AppLayoutProps,
-} from 'next/app'
-import type { NextComponentType } from 'next'
-import { ReactNode } from 'react'
+import type { ReactElement, ReactNode } from 'react'
+import type { AppProps } from 'next/app'
+import type { NextPage } from 'next'
 import ThemeProvider from '../containers/ThemeProvider'
 
 
-const App: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = (
-  { Component, pageProps }: AppLayoutProps,
-) => {
+export type NextPageWithLayout = NextPage & {
+  getLayout?: (page: ReactElement) => ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout
+}
+
+
+const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page: ReactNode) => page)
 
   return (

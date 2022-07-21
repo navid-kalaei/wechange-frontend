@@ -5,12 +5,11 @@ import {
   FormLabel,
   Input,
   Link,
-  Text,
 } from '@chakra-ui/react'
 import { FC } from 'react'
 import NextLink from 'next/link'
 // eslint-disable-next-line sort-imports
-import { FormHelperText, PasswordInput } from '../../Form'
+import { PasswordInput } from '../../Form'
 import VStack from '../../../layouts/VStack'
 
 
@@ -27,7 +26,6 @@ const SignUpForm: FC = () => (
     <FormControl isRequired>
       <FormLabel htmlFor="password">Password</FormLabel>
       <PasswordInput />
-      <FormHelperText variant="success">Password is strong</FormHelperText>
     </FormControl>
 
     <Box>

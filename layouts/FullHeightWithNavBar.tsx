@@ -1,15 +1,15 @@
 import { FC, ReactNode } from 'react'
 import { Flex, FlexProps } from '@chakra-ui/react'
-import ColumnGrowableCenter from './ColumnGrowableCenter'
+import ColumnGrowable from './ColumnGrowable'
 import SimpleNavBar from '../components/SimpleNavBar'
 
 
-interface FullHeightCenterWithNavBarProps extends FlexProps {
+interface FullHeightWithNavBarProps extends FlexProps {
   children?: ReactNode
 }
 
 
-const FullHeightCenterWithNavBar: FC<FullHeightCenterWithNavBarProps> = (props) => {
+const FullHeightWithNavBar: FC<FullHeightWithNavBarProps> = (props) => {
   const { children, ...flexProps } = props
 
   return (
@@ -21,17 +21,17 @@ const FullHeightCenterWithNavBar: FC<FullHeightCenterWithNavBarProps> = (props) 
         h="100vh"
       >
         <SimpleNavBar />
-        <ColumnGrowableCenter>
+        <ColumnGrowable>
           {children}
-        </ColumnGrowableCenter>
+        </ColumnGrowable>
       </Flex>
       {/* eslint-enable react/jsx-props-no-spreading */}
     </>
   )
 }
 
-FullHeightCenterWithNavBar.defaultProps = {
+FullHeightWithNavBar.defaultProps = {
   children: null,
 }
 
-export default FullHeightCenterWithNavBar
+export default FullHeightWithNavBar

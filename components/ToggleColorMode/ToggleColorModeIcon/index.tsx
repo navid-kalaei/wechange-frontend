@@ -1,6 +1,5 @@
+import { HiMoon, HiSun } from 'react-icons/hi'
 import { FC } from 'react'
-import { FaMoon } from '@react-icons/all-files/fa/FaMoon'
-import { FaSun } from '@react-icons/all-files/fa/FaSun'
 import { useColorMode } from '@chakra-ui/react'
 
 
@@ -9,11 +8,11 @@ const ToggleColorModeIcon: FC = () => {
 
   switch (colorMode) {
     case 'light':
-      return (<FaMoon />)
+      return (<HiMoon />)
     case 'dark':
-      return (<FaSun />)
+      return (<HiSun />)
     default:
-      return (<FaMoon />)
+      return (<HiMoon />)
   }
 }
 

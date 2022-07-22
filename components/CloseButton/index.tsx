@@ -1,6 +1,6 @@
 import { ButtonProps, Icon, IconButton, useStyleConfig } from '@chakra-ui/react'
 import { FC, MouseEventHandler } from 'react'
-import { HiX } from '@react-icons/all-files/hi/HiX'
+import { HiX } from 'react-icons/hi'
 
 
 interface CloseButtonProps extends ButtonProps {

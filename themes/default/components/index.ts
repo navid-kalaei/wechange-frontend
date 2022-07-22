@@ -5,6 +5,7 @@ import Card from './Card'
 import CloseButton from './CloseButton'
 import FormHelperText from './FormHelperText'
 import Link from './Link'
+import Step from './Step'
 
 
 const components: ThemeComponents = {
@@ -13,6 +14,7 @@ const components: ThemeComponents = {
   CloseButton,
   FormHelperText,
   Link,
+  Step,
 }
 
 

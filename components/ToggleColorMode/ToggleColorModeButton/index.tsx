@@ -17,6 +17,7 @@ const ToggleColorModeButton: FC = () => {
 
       <Button
         onClick={toggleColorMode}
+        p={0}
         size="sm"
       >
         <ToggleColorModeIcon />

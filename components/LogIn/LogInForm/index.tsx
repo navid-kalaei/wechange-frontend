@@ -23,6 +23,8 @@ const SignUpForm: FC = () => (
       <Input id="email" />
     </FormControl>
 
+    {/* use password field because of the show button.
+    it was not part of the original design and was added later */}
     <FormControl isRequired>
       <FormLabel htmlFor="password">Password</FormLabel>
       <PasswordInput />

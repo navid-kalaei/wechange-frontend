@@ -18,7 +18,7 @@ const VisibilityOption: ComponentStyleConfig = {
     },
     icon: {
       boxSize: '1.5rem',
-    }
+    },
   },
 
   variants: {

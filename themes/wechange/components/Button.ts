@@ -13,6 +13,7 @@ const Button: ComponentStyleConfig = {
       h: 6,
       w: 'full',
     },
+
     'brand-solid': (props: StyleFunctionProps) => ({
       bg: mode('teal.600', 'teal.300')(props),
       color: mode('white', 'gray.900')(props),
@@ -45,9 +46,16 @@ const Button: ComponentStyleConfig = {
         bg: 'gray.400',
       },
     }),
+
     'brand-loading': (props: StyleFunctionProps) => ({
       color: mode('white', 'gray.900')(props),
       bg: mode('teal.500', 'teal.200')(props),
+    }),
+
+    ghost: (props: StyleFunctionProps) => ({
+      borderWidth: '1px',
+      borderColor: 'gray.500',
+      color: mode('gray.800', 'gray.50')(props),
     }),
   },
 }

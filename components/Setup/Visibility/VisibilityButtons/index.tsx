@@ -1,14 +1,15 @@
-import { FC } from 'react'
 import { Button, HStack } from '@chakra-ui/react'
+import { FC } from 'react'
 
 
 const VisibilityButtons: FC = () => (
   <HStack
-    alignItems="flex-end"
+    gap={4}
+    justifyContent="end"
     w="full"
   >
-    <Button>Back</Button>
-    <Button>Next</Button>
+    <Button variant="ghost">Back</Button>
+    <Button variant="brand-solid">Complete profile</Button>
   </HStack>
 )
 

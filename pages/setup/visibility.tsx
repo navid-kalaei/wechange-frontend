@@ -6,8 +6,8 @@ import Layout from '../../components/Setup/Layout'
 import { NextPageWithLayout } from '../_app'
 import Title from '../../components/Setup/Title'
 import VStack from '../../layouts/VStack'
-import VisibilityForm from '../../components/Setup/Visibility/VisibilityForm'
 import VisibilityButtons from '../../components/Setup/Visibility/VisibilityButtons'
+import VisibilityForm from '../../components/Setup/Visibility/VisibilityForm'
 
 
 const Visibility: NextPageWithLayout = () => (

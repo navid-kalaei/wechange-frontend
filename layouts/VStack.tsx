@@ -1,5 +1,4 @@
-import { StackProps as ChakraStackProps, VStack as ChakraVStack } from '@chakra-ui/react'
-import { FC } from 'react'
+import { StackProps as ChakraStackProps, VStack as ChakraVStack, forwardRef } from '@chakra-ui/react'
 
 
 const VStackSize = {
@@ -12,7 +11,7 @@ interface VStackProps extends ChakraStackProps {
 }
 
 
-const VStack: FC<VStackProps> = (props) => {
+const VStack = forwardRef<VStackProps, 'div'>((props, ref) => {
   const { children, size: sizeName, ...rest } = props
 
   const size = VStackSize[sizeName as keyof typeof VStackSize]
@@ -22,6 +21,7 @@ const VStack: FC<VStackProps> = (props) => {
       {/* eslint-disable react/jsx-props-no-spreading */}
       <ChakraVStack
         {...rest}
+        ref={ref}
         spacing={size}
       >
         {children}
@@ -29,7 +29,7 @@ const VStack: FC<VStackProps> = (props) => {
       {/* eslint-enable react/jsx-props-no-spreading */}
     </>
   )
-}
+})
 
 VStack.defaultProps = {
   size: 'md',

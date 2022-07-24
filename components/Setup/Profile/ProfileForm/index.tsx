@@ -1,5 +1,4 @@
 import {
-  Avatar,
   FormControl,
   FormHelperText,
   FormLabel,
@@ -8,6 +7,8 @@ import {
   Textarea,
 } from '@chakra-ui/react'
 import { FC } from 'react'
+// eslint-disable-next-line sort-imports
+import AvatarInput from './AvatarInput'
 import VStack from '../../../../layouts/VStack'
 
 
@@ -21,12 +22,7 @@ const ProfileForm: FC = () => (
         alignItems="center"
         gap={6}
       >
-        <Avatar
-          backgroundColor="red.400"
-          color="white"
-          name="Teal White"
-          size="xl"
-        />
+        <AvatarInput />
 
         <FormHelperText>
           {/* eslint-disable-next-line max-len */}

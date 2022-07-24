@@ -25,6 +25,7 @@ const VisibilityOption: FC<VisibilityOptionProps> = (props) => {
   const input = getInputProps()
   const checkbox = getCheckboxProps()
 
+  /* eslint-disable react/jsx-props-no-spreading */
   return (
     <Box as="label">
       <input {...input} />
@@ -45,6 +46,7 @@ const VisibilityOption: FC<VisibilityOptionProps> = (props) => {
       </HStack>
     </Box>
   )
+  /* eslint-enable react/jsx-props-no-spreading */
 }
 
 

@@ -4,6 +4,7 @@ import { StackProps as ChakraStackProps, VStack as ChakraVStack, forwardRef } fr
 const VStackSize = {
   sm: 4,
   md: 6,
+  lg: 8,
 }
 
 interface VStackProps extends ChakraStackProps {

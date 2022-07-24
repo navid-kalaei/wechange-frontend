@@ -7,6 +7,7 @@ import FormHelperText from './FormHelperText'
 import Link from './Link'
 import Step from './Step'
 import VisibilityOption from './VisibilityOption'
+import SetupActionButtons from './SetupActionButtons'
 
 
 const components: ThemeComponents = {
@@ -17,6 +18,7 @@ const components: ThemeComponents = {
   Link,
   Step,
   VisibilityOption,
+  SetupActionButtons,
 }
 
 

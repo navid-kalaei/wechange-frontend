@@ -1,16 +1,14 @@
-import { Button, HStack } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 import { FC } from 'react'
+// eslint-disable-next-line sort-imports
+import ActionButtons from '../../ActionButtons'
 
 
 const VisibilityButtons: FC = () => (
-  <HStack
-    gap={4}
-    justifyContent="end"
-    w="full"
-  >
+  <ActionButtons>
     <Button variant="ghost">Back</Button>
     <Button variant="brand-solid">Complete profile</Button>
-  </HStack>
+  </ActionButtons>
 )
 
 

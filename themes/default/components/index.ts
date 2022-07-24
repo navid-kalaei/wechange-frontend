@@ -6,6 +6,7 @@ import CloseButton from './CloseButton'
 import FormHelperText from './FormHelperText'
 import Link from './Link'
 import Step from './Step'
+import VisibilityOption from './VisibilityOption'
 
 
 const components: ThemeComponents = {
@@ -15,6 +16,7 @@ const components: ThemeComponents = {
   FormHelperText,
   Link,
   Step,
+  VisibilityOption,
 }
 
 

@@ -1,5 +1,5 @@
-import type { ComponentStyleConfig } from '@chakra-ui/theme'
 import { StyleFunctionProps, mode } from '@chakra-ui/theme-tools'
+import type { ComponentStyleConfig } from '@chakra-ui/theme'
 
 
 const Step: ComponentStyleConfig = {

@@ -9,8 +9,8 @@ import InputLeftAddon from './InputLeftAddon'
 import Link from './Link'
 import SetupActionButtons from './SetupActionButtons'
 import Step from './Step'
-import VisibilityOption from './VisibilityOption'
 import Tag from './Tag'
+import VisibilityOption from './VisibilityOption'
 
 
 const components: ThemeComponents = {

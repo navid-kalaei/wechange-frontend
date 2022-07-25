@@ -30,7 +30,6 @@ const VisibilityForm: FC = () => {
   const { getRootProps, getRadioProps } = useRadioGroup({
     name: 'visibility',
     defaultValue: 'public',
-    onChange: console.log,
   })
 
   const group = getRootProps()

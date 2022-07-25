@@ -4,6 +4,7 @@ import Alert from './Alert'
 import Card from './Card'
 import CloseButton from './CloseButton'
 import FormHelperText from './FormHelperText'
+import InputLeftAddon from './InputLeftAddon'
 import Link from './Link'
 import SetupActionButtons from './SetupActionButtons'
 import Step from './Step'
@@ -15,6 +16,7 @@ const components: ThemeComponents = {
   Card,
   CloseButton,
   FormHelperText,
+  InputLeftAddon,
   Link,
   Step,
   VisibilityOption,

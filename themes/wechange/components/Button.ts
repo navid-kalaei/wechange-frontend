@@ -3,6 +3,11 @@ import type { ComponentStyleConfig } from '@chakra-ui/theme'
 
 
 const Button: ComponentStyleConfig = {
+
+  baseStyle: {
+    marginInline: 0,
+  },
+
   variants: {
     inputRightElement: {
       bg: 'gray.100',
@@ -52,11 +57,19 @@ const Button: ComponentStyleConfig = {
       bg: mode('teal.500', 'teal.200')(props),
     }),
 
-    ghost: (props: StyleFunctionProps) => ({
+    outline: (props: StyleFunctionProps) => ({
       borderWidth: '1px',
       borderColor: 'gray.500',
       color: mode('gray.800', 'gray.50')(props),
     }),
+
+    ghost: (props: StyleFunctionProps) => {
+      const { colorScheme: c } = props
+
+      return ({
+        color: mode(`${c}.600`, `${c}.300`)(props),
+      })
+    },
   },
 }
 

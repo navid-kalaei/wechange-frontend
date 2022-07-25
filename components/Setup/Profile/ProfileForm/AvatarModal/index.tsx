@@ -46,7 +46,7 @@ const AvatarModal: FC<AvatarModalProps> = (props) => {
 
             <Button
               alignSelf="stretch"
-              variant="ghost"
+              variant="outline"
             >
               Upload Image
             </Button>
@@ -80,7 +80,7 @@ const AvatarModal: FC<AvatarModalProps> = (props) => {
           <Button
             mr={4}
             onClick={onClose}
-            variant="ghost"
+            variant="outline"
           >
             Cancel
           </Button>

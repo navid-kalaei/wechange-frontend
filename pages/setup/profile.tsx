@@ -10,7 +10,7 @@ import VStack from '../../layouts/VStack'
 
 const Profile: NextPageWithLayout = () => (
   <>
-    <Title>Hey Username!</Title>
+    <Title>Hey!</Title>
 
     <Steps activeStep={StepStages.PROFILE} />
 

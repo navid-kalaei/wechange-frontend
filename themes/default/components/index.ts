@@ -2,6 +2,7 @@ import { ThemeComponents } from '@chakra-ui/theme/dist/declarations/src/theme.ty
 // eslint-disable-next-line sort-imports
 import Alert from './Alert'
 import Card from './Card'
+import Checkbox from './Checkbox'
 import CloseButton from './CloseButton'
 import FormHelperText from './FormHelperText'
 import InputLeftAddon from './InputLeftAddon'
@@ -9,11 +10,13 @@ import Link from './Link'
 import SetupActionButtons from './SetupActionButtons'
 import Step from './Step'
 import VisibilityOption from './VisibilityOption'
+import Tag from './Tag'
 
 
 const components: ThemeComponents = {
   Alert,
   Card,
+  Checkbox,
   CloseButton,
   FormHelperText,
   InputLeftAddon,
@@ -21,6 +24,7 @@ const components: ThemeComponents = {
   Step,
   VisibilityOption,
   SetupActionButtons,
+  Tag,
 }
 
 

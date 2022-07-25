@@ -1,6 +1,3 @@
-import { FC, useCallback } from 'react'
-import { useImmerReducer } from 'use-immer'
-// eslint-disable-next-line sort-imports
 import {
   Button,
   FormControl,
@@ -14,7 +11,9 @@ import {
   MenuList,
   Text,
 } from '@chakra-ui/react'
+import { FC, useCallback } from 'react'
 import { HiChevronDown, HiOutlineTrash } from 'react-icons/hi'
+import { useImmerReducer } from 'use-immer'
 // eslint-disable-next-line sort-imports
 import ContactInfoInput, { ContactType } from './ContactInfoInput'
 import VStack from '../../../../layouts/VStack'
@@ -68,10 +67,7 @@ const ContactForm: FC = () => {
 
 
   return (
-    <VStack
-      alignItems="stretch"
-      size="sm"
-    >
+    <>
       <Text fontWeight="semibold">Contact, website, social media</Text>
 
       {/* eslint-disable-next-line max-len */}
@@ -80,8 +76,10 @@ const ContactForm: FC = () => {
         Keep in mind that the information will be visible to others.
       </Text>
 
-      <VStack size="sm">
-
+      <VStack
+        size="sm"
+        w="full"
+      >
         {
             contactInputs.map((contactInput, idx) => (
               <HStack w="full">
@@ -99,7 +97,7 @@ const ContactForm: FC = () => {
                 </Button>
               </HStack>
             ))
-          }
+        }
 
 
         <Menu>
@@ -141,7 +139,7 @@ const ContactForm: FC = () => {
         </Text>
       </VStack>
 
-    </VStack>
+    </>
   )
 }
 

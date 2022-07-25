@@ -29,14 +29,14 @@ const contactItems: Record<string, ContactType> = {
 
 // todo: needs clean up
 const ContactForm: FC = () => {
-  const [contactInputs, dispatch] = useImmerReducer(
-    (draft, action) => {
+  const [contactInputs, dispatch] = useImmerReducer<ContactType[]>(
+    (draft, action: { type: string, payload: ContactType | number }) => {
       switch (action.type) {
         case 'add':
-          draft.push(action.payload)
+          draft.push(action.payload as ContactType)
           break
         case 'remove':
-          draft.splice(action.payload, 1)
+          draft.splice(action.payload as number, 1)
           break
         default:
           break
@@ -46,7 +46,7 @@ const ContactForm: FC = () => {
   )
 
   const addContactInput = useCallback(
-    (contactItemType) => {
+    (contactItemType: ContactType) => {
       dispatch({
         type: 'add',
         payload: contactItemType,

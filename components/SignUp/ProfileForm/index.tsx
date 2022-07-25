@@ -30,7 +30,9 @@ const ProfileForm: FC = () => (
     </FormControl>
 
 
-    <Button variant="brand-solid">Sign Up</Button>
+    <NextLink href="/signup/welcome">
+      <Button variant="brand-solid">Sign Up</Button>
+    </NextLink>
 
     <Box>
       <Text as="span">

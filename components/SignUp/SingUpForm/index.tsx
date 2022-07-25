@@ -30,7 +30,9 @@ const SignUpForm: FC = () => (
       <FormHelperText variant="success">Password is strong</FormHelperText>
     </FormControl>
 
-    <Button variant="brand-solid">Continue</Button>
+    <NextLink href="/signup/profile">
+      <Button variant="brand-solid">Continue</Button>
+    </NextLink>
 
     <Box>
       <Text mb={4}>

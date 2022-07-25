@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import { Button, Text } from '@chakra-ui/react'
 import { FC } from 'react'
 import VStack from '../../../layouts/VStack'
@@ -14,7 +15,9 @@ const Welcome: FC = () => (
       Next we will guide you through the most important profile settings.
     </Text>
 
-    <Button variant="brand-solid">Get started</Button>
+    <NextLink href="/setup/profile">
+      <Button variant="brand-solid">Get started</Button>
+    </NextLink>
   </VStack>
 )
 

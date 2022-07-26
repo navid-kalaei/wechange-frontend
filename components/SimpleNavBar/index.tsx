@@ -23,7 +23,7 @@ const SimpleNavBar: FC = () => (
         alt="logo"
         height={28}
         layout="fixed"
-        src="/projects/default/img/logo.png"
+        src="/_next_public/projects/default/img/logo.png"
         width={28}
       />
 

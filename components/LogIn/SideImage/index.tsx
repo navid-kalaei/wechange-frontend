@@ -4,7 +4,7 @@ import { FC } from 'react'
 
 const SideImage: FC = () => {
   const { colorMode } = useColorMode()
-  const imageSrc = `/_next/projects/wechange/img/login/${colorMode}.png`
+  const imageSrc = `/projects/wechange/img/login/${colorMode}.png`
 
   return (
     <Show above="xl">
